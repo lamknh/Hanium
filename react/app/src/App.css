@@ -1,0 +1,143 @@
+#header{
+  height: 10vh;
+}
+#content{
+  height: 80vh;
+  background: #ededed;
+}
+#footer{
+  height: 10vh;
+}
+
+/* loginPage */
+.login #header{
+  background: #ff9319;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login #content{
+  background: #fff;
+  text-align: center;
+}
+.login #content #description{
+  padding-top: 20vh;
+  color: rgb(98, 98, 98);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.login #content h1{
+  font-size: 2.5rem;
+}
+.login #content h2{
+  padding-top: 2vh;
+  color: gray;
+  font-size: 1.2rem;
+}
+.login #content .loginForm{
+  padding-top: 5vh;
+}
+.login #content .loginForm label input, button{
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  margin: 10px auto;
+}
+.login #content .loginForm label input{
+  border: none;
+  border-bottom: 1.5px solid gray;
+  width: 250px;
+}
+.login #content .loginForm .loginCheck{
+  display: flex;
+  width: 105px;
+  margin: 0 auto;
+  align-items: center;
+}
+.login #content .loginForm .loginCheck p{
+  padding: 0 5px;
+  color: rgb(69, 69, 69);
+}
+.login #content .loginForm button{
+  margin: 20px auto;
+  background: #177c5e;
+  border-color: transparent;
+  height: 50px; 
+  width: 200px;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 2px -1px #111;
+  border-radius: 10px;
+}
+.login #content .loginForm button a{
+  color: #fff;
+  text-decoration: none;
+}
+.login #content .searchInfo ul{
+  padding-top: 20px;
+}
+.login #content .searchInfo li{
+  color: gray;
+  position: relative;
+  display: inline;
+  padding: 0 8px 0 10px;
+  letter-spacing: 0.7px;
+}
+.login #content .searchInfo li:before {
+  content: ""; 
+  width: 2px; 
+  height: 15px; 
+  background: #bbb; 
+  position: absolute;
+  left: 0; 
+  top: 3px;
+}
+.login #content .searchInfo li:first-child:before {
+  width: 0; 
+  height: 0;
+}
+.login #footer{
+  background: #177c5e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.home{
+  min-height: 100vh;
+  background: #ff9319;
+}
+/* header */
+#header{
+}
+nav{
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+.nav-links li a{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav-links li a:link{
+  text-decoration: none;
+}
+nav ul li:hover a{
+  color: #000;
+  transition: 0.4s ease;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
