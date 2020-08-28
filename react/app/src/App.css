@@ -1,5 +1,6 @@
 #header{
   height: 10vh;
+  background: #ff9319;
 }
 #content{
   height: 80vh;
@@ -7,11 +8,15 @@
 }
 #footer{
   height: 10vh;
+  background: #177c5e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
 /* loginPage */
 .login #header{
-  background: #ff9319;
   color: #fff;
   display: flex;
   align-items: center;
@@ -96,31 +101,20 @@
   width: 0; 
   height: 0;
 }
-.login #footer{
-  background: #177c5e;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-}
 
-.home{
-  min-height: 100vh;
-  background: #ff9319;
-}
-/* header */
-#header{
-}
+/* Nav */
 nav{
   display: flex;
-  height: 10vh;
+  min-height: 10vh;
   align-items: center;
+  justify-content: space-around;
+  color: #fff;
 }
 .nav-links{
+  list-style: none;
   display: flex;
   justify-content: space-around;
-  list-style: none;
-  width: 100%;
+  width: 30%;
 }
 .nav-links li a{
   color: #fff;
@@ -134,10 +128,168 @@ nav ul li:hover a{
   color: #000;
   transition: 0.4s ease;
 }
+
+/* burger */
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px){
+  html, body{
+      position: relative;
+      overflow-x: hidden;
+  }
+  .nav-links {
+      position: absolute;
+      justify-content: space-around;
+      right: 0px;
+      height: 90vh;
+      top: 10vh;
+      background: #ff9319;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .search-box{
+      position: absolute;
+      left: 7%;
+  }
+  .burger{
+      display: block;
+      position: absolute;
+      margin-left: auto;
+      right: 3%;
+      cursor: pointer;
+  }
+  nav-list{
+      width: 70%;
+  }
+}
+.nav-active{
+  transform: translateX(0%);
+}
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* OwnerHome */
+.salesPrice, .salesTop3, .recentEvent {
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+.ownerHome div{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.salesPrice{
+  height: 20vh;
+  padding: 1vh;
+}
+.salesPrice h2{
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0 5px;
+}
+.salesPrice h1{
+  color: #ff7030;
+  font-size: 3.2rem;
+  text-align: center;
+}
+.salesPrice button{
+  border-style: none;
+  background: #fff;
+  border-top: 2px solid #ededed;
+  width: 100%;
+  margin: 0;
+  padding: 7px 0 0 0;
+  height: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.salesTop3{
+  height: 42vh;
+  padding: 1vh;
+  display: block !important;
+}
+.salesTop3 .menuContainer{
+  justify-content: space-around;
+  height: 90%;
+}
+.salesTop3 h1{
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 5px 0 0 10px;
+  height: 10%;
+}
+.salesTop3 .menu{
+  flex-direction: row;
+  align-items: center;
+}
+.salesTop3 h3{
+  background: #ff7030;
+  color: #fff;
+  border-radius: 5px;
+  padding: 4px 15px;
+}
 .dot {
   height: 25px;
   width: 25px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+}
+.salesTop3 span{
+  height: 80px;
+  width: 80px;
+}
+.ownerHome #footer{
+  align-items: unset;
+}
+.recentEvent{
+  height: 5vh;
+  padding: 1vh;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center;
+}
+.recentEvent h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.recentEvent #count{
+  color: #ff7030;
+  padding: 0 8px;
 }

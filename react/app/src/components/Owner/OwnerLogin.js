@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function Login(){
+function OwnerLogin(){
     return(
         <div className="login">
             <div id="header">
@@ -38,4 +38,4 @@ function Login(){
     )
 }
 
-export default Login;
+export default OwnerLogin;
