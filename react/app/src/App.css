@@ -15,7 +15,7 @@
   padding: 0 20px;
 }
 
-/* loginPage */
+/* OwnerloginPage */
 .login #header{
   color: #fff;
   display: flex;
@@ -292,4 +292,32 @@ nav ul li:hover a{
 .recentEvent #count{
   color: #ff7030;
   padding: 0 8px;
+}
+
+/* userLogin */
+.userLogin{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.userLogin button{
+  margin: 0 auto !important;
+}
+.userLogin label{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15vh;
+}
+.userLogin label input{
+  padding-top: 5vh !important;
+}
+.login #content .loginForm #undefined{
+  background: #fff;
+  border-color: #ccc;
+  box-shadow: none;
+}
+.login #content .loginForm #undefined a{
+  color: gray;
 }
