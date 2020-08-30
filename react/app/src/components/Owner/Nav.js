@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -28,10 +29,10 @@ const Nav = () =>(
         <h1>로고</h1>
         <ul className="nav-links">
             <li>
-                <a href="#">매출 관리</a>
+                <Link to='/ownerHome'>매출 관리</Link>
             </li>
             <li>
-                <a href="#">메뉴 수정</a>
+                <Link to='/menuEdit'>메뉴 수정</Link>
             </li>
             <li>
                 <a href="#">이벤트/광고</a>

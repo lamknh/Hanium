@@ -21,7 +21,7 @@ function OwnerLogin(){
                         <input type="checkbox" name="loginCheck"/> 
                         <p>로그인 유지</p>
                     </div>
-                    <button><Link to='/OwnerHome'>로그인하기</Link></button>
+                    <button><Link to='/ownerHome'>로그인하기</Link></button>
                     <div className="searchInfo">
                         <ul>
                             <li>아이디 찾기</li>

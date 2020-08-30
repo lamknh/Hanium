@@ -7,6 +7,7 @@ import OwnerLogin from './components/Owner/OwnerLogin';
 import OwnerHome from './components/Owner/OwnerHome';
 import UserLogin from './components/User/UserLogin';
 import ManagerLogin from './components/Manager/ManagerLogin';
+import MenuEdit from './components/Owner/MenuEdit';
 
 class App extends React.Component{
   render(){
@@ -18,6 +19,7 @@ class App extends React.Component{
             <Route path="/ownerHome" component={OwnerHome}/>
             <Route path="/userLogin" component={UserLogin}/>
             <Route path="/managerLogin" component={ManagerLogin}/>
+            <Route path="/menuEdit" component={MenuEdit}/>
         </Switch>
       </div>
     )

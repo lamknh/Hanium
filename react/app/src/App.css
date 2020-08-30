@@ -88,7 +88,7 @@
   padding: 0 8px 0 10px;
   letter-spacing: 0.7px;
 }
-.login #content .searchInfo li:before {
+.login #content .searchInfo li:not(:first-child):before {
   content: ""; 
   width: 2px; 
   height: 15px; 
@@ -96,10 +96,6 @@
   position: absolute;
   left: 0; 
   top: 3px;
-}
-.login #content .searchInfo li:first-child:before {
-  width: 0; 
-  height: 0;
 }
 
 /* Nav */
@@ -110,6 +106,9 @@ nav{
   justify-content: space-around;
   color: #fff;
 }
+nav h1{
+  font-size: 2rem;
+}
 .nav-links{
   list-style: none;
   display: flex;
@@ -118,7 +117,7 @@ nav{
 }
 .nav-links li a{
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .nav-links li a:link{
@@ -272,8 +271,8 @@ nav ul li:hover a{
   display: inline-block;
 }
 .salesTop3 span{
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 }
 .ownerHome #footer{
   align-items: unset;
@@ -294,6 +293,100 @@ nav ul li:hover a{
   padding: 0 8px;
 }
 
+/* menuEditor */
+.menuEdit .storeName, .category, .menuInfo{
+  background: #fff;
+}
+.menuEdit nav .burger div{
+  margin: 5px;
+}
+.menuEdit #content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuEdit .category{
+  display: flex;
+  align-items: center;
+}
+.storeName{
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px 0 -5px 0 ;
+}
+.storeName h1{
+  font-size: 1.8rem;
+}
+.menuEdit .category{
+  width: 100%;
+}
+.menuEdit .category ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.menuEdit .category li{
+  color: #663a26;
+  position: relative;
+  display: inline;
+  padding: 0 8px 0 10px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.menuEdit .category button{
+  border-style: none;
+  background: #fff;
+  font-size: 1.2rem;
+  color: #ff7030;
+  font-weight: bold;
+}
+.menuEdit .category li:not(:first-child):before {
+  content: ""; 
+  width: 1.5px; 
+  height: 18px; 
+  background: #663a26; 
+  position: absolute;
+  left: 0; 
+  top: 5px;
+}
+.menuEdit .menu{
+  display: flex;
+}
+.menuEdit .menu span{
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+}
+.menuEdit .menu .menuInfo{
+  margin: 0 10px;
+  width: 230px;
+  border-radius: 10px;
+}
+.menuEdit .menu .menuInfo h1, h2{
+  padding: 10px;
+}
+.menuEdit .menu .menuInfo h1{
+  font-size: 1.8rem;
+}
+#menuEditBtn{
+  border: 2px solid #ff7030;
+  border-radius: 10px;
+  width: 400px;
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#menuAddBtn{
+  border: none;
+  border-radius: 10px;
+  background-color: #ff7030;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 400px;
+}
 /* userLogin */
 .userLogin{
   height: 70vh;
