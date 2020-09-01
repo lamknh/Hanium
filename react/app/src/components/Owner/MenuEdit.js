@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Nav from './Nav';
+import Footer from '../Footer';
+
 function MenuEdit(){
     return(
         <div className="menuEdit">
@@ -39,9 +41,7 @@ function MenuEdit(){
                     <button id="menuAddBtn">메뉴 추가/삭제</button>
                 </div>
             </div>
-            <div id="footer">
-                <h1>MGJ</h1>
-            </div>
+            <Footer />
         </div>
     )
 }

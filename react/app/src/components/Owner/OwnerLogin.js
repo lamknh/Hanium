@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import Footer from '../Footer';
+
 function OwnerLogin(){
     return(
         <div className="login">
@@ -31,9 +33,7 @@ function OwnerLogin(){
                     </div>
                 </div>
             </div>
-            <div id="footer">
-                <h1>MGJ</h1>
-            </div>
+            <Footer />
         </div>
     )
 }

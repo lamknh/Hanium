@@ -4,6 +4,7 @@ import Nav from './Nav';
 import SalesPrice from './SalesPrice';
 import SalesTop3 from './SalesTop3';
 import RecentEvent from './RecentEvent';
+import Footer from '../Footer';
 
 function OwnerHome(){
     return(
@@ -16,9 +17,7 @@ function OwnerHome(){
           <SalesTop3 />
           <RecentEvent />
         </div>
-        <div id="footer">
-          <h1>MGJ</h1>
-        </div>
+        <Footer />
       </div>
     )
 }
