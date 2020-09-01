@@ -383,6 +383,51 @@ nav ul li:hover a{
   font-size: 1.5rem;
   width: 400px;
 }
+
+/*ManagingBoard*/
+.MBoard #content{
+  background: #fff;
+}
+.MBoard .board{
+  display: flex;
+  height: 77vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.MBoard .title{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  padding-top: 20px;
+  width: 90%;
+}
+.MBoard .btn{
+  display: flex;
+  width: 120px;
+}
+.MBoard .btn #edit{
+  color: #fff;
+  background-color: #177c5e;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  font-weight: bold;
+}
+.MBoard .btn #delete{
+  border: 2px solid #177c5e;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 50px;
+  font-weight: bold;
+}
+.MBoard .boardContent{
+  border: 2px solid #ccc;
+  height: 60vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* userLogin */
 .userLogin{
   height: 70vh;
