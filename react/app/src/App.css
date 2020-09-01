@@ -385,6 +385,11 @@ nav ul li:hover a{
 }
 
 /*ManagingBoard*/
+.MBoard nav{
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
+}
 .MBoard #content{
   background: #fff;
 }
